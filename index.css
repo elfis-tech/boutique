@@ -317,3 +317,109 @@ nav active{
     top: 0;
 }
 
+/* ########################### */
+/* Produits */
+/* ########################### */
+
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.product-box{
+    position: relative;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+
+.product-box img{
+        transition: .5s ease-in-out;
+}
+
+.product-box h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.product-box .stars .bx{
+    color: rgb(255, 170, 0);
+}
+
+.products-container .bxs-heart{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 1.6rem;
+    background: var(--accent);
+    color: var(--light);
+    cursor: pointer;
+    border-radius: 1rem 0 0 0;
+}
+
+
+.products-container .bxs-heart:hover{
+    background: var(--accent2);
+}
+
+.products-container .product-box:hover img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/* ########################### */
+/* Les Avis */
+/* ########################### */
+
+.reviews-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.reviews-box{
+    box-shadow: var(--box-shadow);
+    border-bottom: 3px solid var(--accent2);
+    padding: 2rem;
+    text-align: center;
+}
+
+.reviews-box:hover{
+    background: var(--second);
+}
+
+.reviews-box img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviews-box .stars{
+    color: rgb(255, 170, 0);
+    margin-top: 0.5rem;
+}
+
+.reviews-box h2{
+    font-size: 1rem;
+}
+
+.reviews-box p{
+    margin: 1rem 0;
+}
+
+/* ########################### */
+/* Contact */
+/* ########################### */
+
+/* ########################### */
+/* Footer */
+/* ########################### */
+
+/* ########################### */
+/* Breakpoints */
+/* ########################### */
