@@ -272,14 +272,21 @@
                 <h3>Notre Adresse</h3>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d180.40702934004807!2d6.9232773609787674!3d43.658310687783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cc2f5528fd2207%3A0x942086c6d60b52b0!2s4%20Rue%20Marcel%20Journet%2C%2006130%20Grasse!5e0!3m2!1sfr!2sfr!4v1747231209252!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-
             <div class="form_contact">
                 <h3>Envoyer un message</h3>
-                <form action="#">
-                    <input type="text" placeholder="Nom">
-                    <input type="email" placeholder="Adresse Mail">
-                    <input type="text" placeholder="Objet">
-                    <textarea name="" cols="30" rows="10" placeholder="Message"></textarea>
+                <form action="https://formsubmit.co/lesmineraux.grasse@gmail.com" method="POST">
+                    <input type="text" name="Nom" required placeholder="Nom / Name">
+                    <input type="email" name="Email" required placeholder="Adresse Mail / Email Address">
+                    <input type="text" name="Objet" required placeholder="Objet / Subject">
+                    <textarea name="Message" cols="30" rows="10" required placeholder="Message"></textarea>
+                    <input type="hidden" name="_captcha" value="false">
+                    <!--Pour pouvoir mettre plusieurs adresses mail en cc
+                    ####################################################################################
+                    <input type="hidden" name="_cc" value="another@email.com,yetanother@email.com"> 
+                    #####################################################################################
+                    -->
+                    <input type="hidden" name="_next" value="https://elfis-tech.github.io/boutique/">
+                    <input type="hidden" name="_template" value="table">
                     <input type="submit" value="Envoyer">
                 </form>
             </div>

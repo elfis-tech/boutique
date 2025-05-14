@@ -469,7 +469,9 @@ nav active{
     background-color: #ea1f33;
     color: #fff;
     border: 0;
+    cursor: pointer;
 }
+
 
 /* ########################### */
 /* Footer */
