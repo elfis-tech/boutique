@@ -420,6 +420,120 @@ nav active{
 /* Footer */
 /* ########################### */
 
+footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,auto));
+    gap: 1.5rem;
+    background: var(--text);
+    color: var(--light);
+    padding: 50px 20px;
+}
+
+footer .social{
+    margin-top: 0.5rem;
+    display: flex;
+    column-gap: .5rem;
+}
+
+footer .social .bx{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--accent);
+    transition: background .2s ease-in-out;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+footer .social .bx:hover{
+    background: var(--accent2);
+}
+
+footer h2{
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+footer a{
+    color: var(--accent);
+}
+
+footer a:hover{
+    color: var(--accent2);
+}
+
+footer img{
+    width: 50px;
+}
+
+.copy{
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 13px;
+    background: var(--light);
+}
+
 /* ########################### */
 /* Breakpoints */
 /* ########################### */
+
+
+@media screen and (max-width: 1080px) {
+    nav{
+        padding: 18px 60px;
+    }
+    section{
+        padding: 50px 60px;
+    }
+}
+@media screen and (max-width: 991px) {
+    nav{
+        padding: 18px 4%;
+    }
+    section{
+        padding: 50px 4%;
+    }
+}
+@media screen and (max-width: 780px) {
+    nav{
+        padding: 12px 4%;
+    }
+    #burger-menu{
+        display: block;
+    }
+    .navigation{
+        position: absolute;
+        top: -700px;
+        left: 0;
+        flex-direction: column;
+        box-shadow: 0 5px 5px 0 rgba(0,0,0,.2);
+        width: 100%;
+        padding: 0 1rem;
+        transition: .5s ease-in-out;
+        z-index: 800;
+        background: var(--light);
+    }
+
+    .navigation.active{
+        top: 100%;
+    }
+
+    .navigation a{
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .navigation-icones{
+        display: flex;
+        column-gap: 1rem;
+    }
+
+}
+/*
+@media screen and (max-width: 380px) {
+    
+}
+
+*/
